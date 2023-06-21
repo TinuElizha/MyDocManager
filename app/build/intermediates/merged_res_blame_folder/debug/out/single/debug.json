@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\font_poppins_extra_bold.ttf.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\font\\poppins_extra_bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\font_poppins_thin.ttf.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\font\\poppins_thin.ttf"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\font_poppins_light.ttf.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\font\\poppins_light.ttf"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\font_poppins_italic.ttf.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\font\\poppins_italic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\font_poppins_medium.ttf.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\font\\poppins_medium.ttf"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\font_poppins_regular.ttf.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\font\\poppins_regular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\font_poppins_black.ttf.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\font\\poppins_black.ttf"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\font_poppins_bold.ttf.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\font\\poppins_bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\navigation_mobile_navigation.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\navigation\\mobile_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-merged_res-72:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.0\\com.tinz.mydocmanager.app-main-74:\\xml\\data_extraction_rules.xml"
+    }
+]

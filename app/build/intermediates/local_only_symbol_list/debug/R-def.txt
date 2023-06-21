@@ -1,0 +1,31 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+dimen activity_horizontal_margin
+dimen activity_vertical_margin
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+font poppins_black
+font poppins_bold
+font poppins_extra_bold
+font poppins_italic
+font poppins_light
+font poppins_medium
+font poppins_regular
+font poppins_thin
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string title_activity_bottum_nav
+string title_dashboard
+string title_home
+string title_notifications
+style Theme.MyDocManager
+xml backup_rules
+xml data_extraction_rules
