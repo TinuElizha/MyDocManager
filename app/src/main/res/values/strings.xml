@@ -4,4 +4,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <!--Pdf view-->
+    <string name="test_pdf_upload">Please select the file for converting to pdf.</string>
 </resources>

@@ -8,6 +8,8 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="33" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <permission
         android:name="com.tinz.mydocmanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
@@ -28,10 +30,6 @@
         android:testOnly="true"
         android:theme="@style/Theme.MyDocManager" >
         <activity
-            android:name="com.tinz.mydocmanager.ui.bottum_nav.BottumNavActivity"
-            android:exported="false"
-            android:label="@string/title_activity_bottum_nav" />
-        <activity
             android:name="com.tinz.mydocmanager.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
@@ -43,10 +41,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="androidx.compose.ui.tooling.PreviewActivity"
+            android:name="androidx.activity.ComponentActivity"
             android:exported="true" />
         <activity
-            android:name="androidx.activity.ComponentActivity"
+            android:name="androidx.compose.ui.tooling.PreviewActivity"
             android:exported="true" />
 
         <provider

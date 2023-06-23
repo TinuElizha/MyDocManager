@@ -4,7 +4,7 @@
             "outputFile": "com.tinz.mydocmanager.app-mergeDebugResources-70:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\fb4b85059465b8ea4baad030ac8405ee\\transformed\\appcompat-1.6.1\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\088b5b5f259e6ed2b4cd9d035f72a937\\transformed\\appcompat-1.6.1\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

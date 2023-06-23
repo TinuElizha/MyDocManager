@@ -1,5 +1,6 @@
 package com.tinz.mydocmanager
 
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -10,6 +11,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.rememberNavController
+import com.tinz.mydocmanager.ui.screens.main.MainScreen
 import com.tinz.mydocmanager.ui.theme.AppTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,25 +25,25 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    MainScreen()
                 }
             }
         }
     }
 }
 
+@Preview(showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_NO)
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+fun MainScreenPreviewLight() {
+    AppTheme {
+        MainScreen()
+    }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
-fun GreetingPreview() {
+fun MainScreenPreviewDark() {
     AppTheme {
-        Greeting("Android")
+        MainScreen()
     }
 }

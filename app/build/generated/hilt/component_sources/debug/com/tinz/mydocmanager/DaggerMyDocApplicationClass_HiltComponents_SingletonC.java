@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.SavedStateHandle;
 import androidx.lifecycle.ViewModel;
 import dagger.hilt.android.ActivityRetainedLifecycle;
+import dagger.hilt.android.ViewModelLifecycle;
 import dagger.hilt.android.flags.HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule;
 import dagger.hilt.android.internal.builders.ActivityComponentBuilder;
 import dagger.hilt.android.internal.builders.ActivityRetainedComponentBuilder;
@@ -17,9 +18,8 @@ import dagger.hilt.android.internal.builders.ViewModelComponentBuilder;
 import dagger.hilt.android.internal.builders.ViewWithFragmentComponentBuilder;
 import dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories;
 import dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories_InternalFactoryFactory_Factory;
-import dagger.hilt.android.internal.managers.ActivityRetainedComponentManager_Lifecycle_Factory;
+import dagger.hilt.android.internal.managers.ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory;
 import dagger.hilt.android.internal.modules.ApplicationContextModule;
-import dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideApplicationFactory;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.DoubleCheck;
 import dagger.internal.Preconditions;
@@ -46,14 +46,20 @@ public final class DaggerMyDocApplicationClass_HiltComponents_SingletonC {
     return new Builder();
   }
 
-  public static final class Builder {
-    private ApplicationContextModule applicationContextModule;
+  public static MyDocApplicationClass_HiltComponents.SingletonC create() {
+    return new Builder().build();
+  }
 
+  public static final class Builder {
     private Builder() {
     }
 
+    /**
+     * @deprecated This module is declared, but an instance is not used in the component. This method is a no-op. For more, see https://dagger.dev/unused-modules.
+     */
+    @Deprecated
     public Builder applicationContextModule(ApplicationContextModule applicationContextModule) {
-      this.applicationContextModule = Preconditions.checkNotNull(applicationContextModule);
+      Preconditions.checkNotNull(applicationContextModule);
       return this;
     }
 
@@ -68,8 +74,7 @@ public final class DaggerMyDocApplicationClass_HiltComponents_SingletonC {
     }
 
     public MyDocApplicationClass_HiltComponents.SingletonC build() {
-      Preconditions.checkBuilderRequirement(applicationContextModule, ApplicationContextModule.class);
-      return new SingletonCImpl(applicationContextModule);
+      return new SingletonCImpl();
     }
   }
 
@@ -210,6 +215,8 @@ public final class DaggerMyDocApplicationClass_HiltComponents_SingletonC {
 
     private SavedStateHandle savedStateHandle;
 
+    private ViewModelLifecycle viewModelLifecycle;
+
     private ViewModelCBuilder(SingletonCImpl singletonCImpl,
         ActivityRetainedCImpl activityRetainedCImpl) {
       this.singletonCImpl = singletonCImpl;
@@ -223,9 +230,16 @@ public final class DaggerMyDocApplicationClass_HiltComponents_SingletonC {
     }
 
     @Override
+    public ViewModelCBuilder viewModelLifecycle(ViewModelLifecycle viewModelLifecycle) {
+      this.viewModelLifecycle = Preconditions.checkNotNull(viewModelLifecycle);
+      return this;
+    }
+
+    @Override
     public MyDocApplicationClass_HiltComponents.ViewModelC build() {
       Preconditions.checkBuilderRequirement(savedStateHandle, SavedStateHandle.class);
-      return new ViewModelCImpl(singletonCImpl, activityRetainedCImpl, savedStateHandle);
+      Preconditions.checkBuilderRequirement(viewModelLifecycle, ViewModelLifecycle.class);
+      return new ViewModelCImpl(singletonCImpl, activityRetainedCImpl, savedStateHandle, viewModelLifecycle);
     }
   }
 
@@ -340,7 +354,7 @@ public final class DaggerMyDocApplicationClass_HiltComponents_SingletonC {
 
     @Override
     public DefaultViewModelFactories.InternalFactoryFactory getHiltInternalFactoryFactory() {
-      return DefaultViewModelFactories_InternalFactoryFactory_Factory.newInstance(ApplicationContextModule_ProvideApplicationFactory.provideApplication(singletonCImpl.applicationContextModule), Collections.<String>emptySet(), new ViewModelCBuilder(singletonCImpl, activityRetainedCImpl));
+      return DefaultViewModelFactories_InternalFactoryFactory_Factory.newInstance(Collections.<String>emptySet(), new ViewModelCBuilder(singletonCImpl, activityRetainedCImpl));
     }
 
     @Override
@@ -372,7 +386,8 @@ public final class DaggerMyDocApplicationClass_HiltComponents_SingletonC {
     private final ViewModelCImpl viewModelCImpl = this;
 
     private ViewModelCImpl(SingletonCImpl singletonCImpl,
-        ActivityRetainedCImpl activityRetainedCImpl, SavedStateHandle savedStateHandleParam) {
+        ActivityRetainedCImpl activityRetainedCImpl, SavedStateHandle savedStateHandleParam,
+        ViewModelLifecycle viewModelLifecycleParam) {
       this.singletonCImpl = singletonCImpl;
       this.activityRetainedCImpl = activityRetainedCImpl;
 
@@ -390,8 +405,7 @@ public final class DaggerMyDocApplicationClass_HiltComponents_SingletonC {
 
     private final ActivityRetainedCImpl activityRetainedCImpl = this;
 
-    @SuppressWarnings("rawtypes")
-    private Provider lifecycleProvider;
+    private Provider<ActivityRetainedLifecycle> provideActivityRetainedLifecycleProvider;
 
     private ActivityRetainedCImpl(SingletonCImpl singletonCImpl) {
       this.singletonCImpl = singletonCImpl;
@@ -402,7 +416,7 @@ public final class DaggerMyDocApplicationClass_HiltComponents_SingletonC {
 
     @SuppressWarnings("unchecked")
     private void initialize() {
-      this.lifecycleProvider = DoubleCheck.provider(new SwitchingProvider<Object>(singletonCImpl, activityRetainedCImpl, 0));
+      this.provideActivityRetainedLifecycleProvider = DoubleCheck.provider(new SwitchingProvider<ActivityRetainedLifecycle>(singletonCImpl, activityRetainedCImpl, 0));
     }
 
     @Override
@@ -412,7 +426,7 @@ public final class DaggerMyDocApplicationClass_HiltComponents_SingletonC {
 
     @Override
     public ActivityRetainedLifecycle getActivityRetainedLifecycle() {
-      return (ActivityRetainedLifecycle) lifecycleProvider.get();
+      return provideActivityRetainedLifecycleProvider.get();
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
@@ -433,8 +447,8 @@ public final class DaggerMyDocApplicationClass_HiltComponents_SingletonC {
       @Override
       public T get() {
         switch (id) {
-          case 0: // dagger.hilt.android.internal.managers.ActivityRetainedComponentManager.Lifecycle 
-          return (T) ActivityRetainedComponentManager_Lifecycle_Factory.newInstance();
+          case 0: // dagger.hilt.android.ActivityRetainedLifecycle 
+          return (T) ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory.provideActivityRetainedLifecycle();
 
           default: throw new AssertionError(id);
         }
@@ -455,12 +469,10 @@ public final class DaggerMyDocApplicationClass_HiltComponents_SingletonC {
   }
 
   private static final class SingletonCImpl extends MyDocApplicationClass_HiltComponents.SingletonC {
-    private final ApplicationContextModule applicationContextModule;
-
     private final SingletonCImpl singletonCImpl = this;
 
-    private SingletonCImpl(ApplicationContextModule applicationContextModuleParam) {
-      this.applicationContextModule = applicationContextModuleParam;
+    private SingletonCImpl() {
+
 
     }
 
