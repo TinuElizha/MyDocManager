@@ -7,6 +7,7 @@ import androidx.navigation.compose.composable
 import com.tinz.mydocmanager.ui.screens.bottom_screens.ImageScannerScreen
 import com.tinz.mydocmanager.ui.screens.bottom_screens.MyDocScreen
 import com.tinz.mydocmanager.ui.screens.pdf.PdfConverterScreen
+import com.tinz.mydocmanager.ui.screens.pdf.PdfViewModel
 
 @Composable
 fun BottomNavGraph(navController: NavHostController) {
@@ -15,7 +16,7 @@ fun BottomNavGraph(navController: NavHostController) {
         startDestination = BottomBarScreen.Pdf.route
     ) {
         composable(route = BottomBarScreen.Pdf.route) {
-            PdfConverterScreen(null,navController)
+            PdfConverterScreen(viewModel = PdfViewModel(),navController)
         }
         composable(route = BottomBarScreen.Image.route) {
             ImageScannerScreen()

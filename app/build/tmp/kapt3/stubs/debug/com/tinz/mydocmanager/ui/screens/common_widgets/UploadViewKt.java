@@ -3,27 +3,19 @@ package com.tinz.mydocmanager.ui.screens.common_widgets;
 import android.content.res.Configuration;
 import android.graphics.drawable.PaintDrawable;
 import androidx.compose.foundation.layout.Arrangement;
+import androidx.compose.material3.ButtonDefaults;
 import androidx.compose.runtime.Composable;
 import androidx.compose.ui.Alignment;
 import androidx.compose.ui.Modifier;
 import androidx.compose.ui.tooling.preview.Preview;
 import com.tinz.mydocmanager.R;
 
-@kotlin.Metadata(mv = {1, 7, 1}, k = 2, d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\u001a\u0012\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\u0007\u001a\b\u0010\u0004\u001a\u00020\u0001H\u0007\u001a\b\u0010\u0005\u001a\u00020\u0001H\u0007\u00a8\u0006\u0006"}, d2 = {"UploadViewCommon", "", "upLoadImgText", "", "UploadViewDark", "UploadViewLight", "app_debug"})
+@kotlin.Metadata(mv = {1, 7, 1}, k = 2, d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a \u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u00032\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00010\u0005H\u0007\u00a8\u0006\u0006"}, d2 = {"UploadViewCommon", "", "upLoadImgText", "", "onClickImage", "Lkotlin/Function0;", "app_debug"})
 public final class UploadViewKt {
     
     @androidx.compose.runtime.Composable
     public static final void UploadViewCommon(@org.jetbrains.annotations.Nullable
-    java.lang.String upLoadImgText) {
-    }
-    
-    @androidx.compose.runtime.Composable
-    @androidx.compose.ui.tooling.preview.Preview(showBackground = true, uiMode = android.content.res.Configuration.UI_MODE_NIGHT_NO)
-    public static final void UploadViewLight() {
-    }
-    
-    @androidx.compose.runtime.Composable
-    @androidx.compose.ui.tooling.preview.Preview(showBackground = true, uiMode = android.content.res.Configuration.UI_MODE_NIGHT_YES)
-    public static final void UploadViewDark() {
+    java.lang.String upLoadImgText, @org.jetbrains.annotations.NotNull
+    kotlin.jvm.functions.Function0<kotlin.Unit> onClickImage) {
     }
 }

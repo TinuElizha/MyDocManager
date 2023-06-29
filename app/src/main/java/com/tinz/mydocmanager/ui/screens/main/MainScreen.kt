@@ -28,6 +28,7 @@ fun MainScreen() {
     ) {
         BottomNavGraph(navController = navController)
     }
+
 }
 
 @Composable

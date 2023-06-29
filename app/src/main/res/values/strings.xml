@@ -7,4 +7,9 @@
 
     <!--Pdf view-->
     <string name="test_pdf_upload">Please select the file for converting to pdf.</string>
+    <string name="select_more_imgs">Select  more images</string>
+    <string name="convertToPdf">Convert to PDF</string>
+    <string name="waitMsgPDF">Please wait,your pdf is generating </string>
+
+
 </resources>

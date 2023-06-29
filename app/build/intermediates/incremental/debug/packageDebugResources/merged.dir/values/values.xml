@@ -10,10 +10,13 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <string name="app_name">Pdf converter and Document Manager</string>
+    <string name="convertToPdf">Convert to PDF</string>
+    <string name="select_more_imgs">Select  more images</string>
     <string name="test_pdf_upload">Please select the file for converting to pdf.</string>
     <string name="title_activity_bottum_nav">BottumNavActivity</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_home">Home</string>
     <string name="title_notifications">Notifications</string>
+    <string name="waitMsgPDF">Please wait,your pdf is generating </string>
     <style name="Theme.MyDocManager" parent="android:Theme.Material.Light.NoActionBar"/>
 </resources>

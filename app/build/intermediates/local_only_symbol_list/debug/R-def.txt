@@ -27,11 +27,14 @@ font poppins_thin
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
+string convertToPdf
+string select_more_imgs
 string test_pdf_upload
 string title_activity_bottum_nav
 string title_dashboard
 string title_home
 string title_notifications
+string waitMsgPDF
 style Theme.MyDocManager
 xml backup_rules
 xml data_extraction_rules

@@ -70,7 +70,6 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.6.0'
     implementation 'androidx.navigation:navigation-ui-ktx:2.6.0'
     kapt 'com.google.dagger:hilt-android-compiler:2.46.1'
@@ -89,7 +88,16 @@ dependencies {
     // Navigation Compose
     implementation("androidx.navigation:navigation-compose:2.6.0")
     // status bar
-    implementation "com.google.accompanist:accompanist-systemuicontroller:0.27.0"
+    implementation "com.google.accompanist:accompanist-systemuicontroller:0.30.1"
+    //Coil is an open-source image-loading library for Android apps.
+    implementation "io.coil-kt:coil-compose:2.2.0"
+    //permission handling in compose
+    implementation 'com.google.accompanist:accompanist-permissions:0.24.11-rc'
+    implementation 'com.itextpdf:itext7-core:7.1.13'
+    implementation 'androidx.work:work-runtime:2.7.0-alpha05'
+
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
 
 }
 kapt {

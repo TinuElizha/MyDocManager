@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.tinz.mydocmanager.app-mergeDebugResources-70:/values-ro/values-ro.xml",
+            "outputFile": "com.tinz.mydocmanager.app-mergeDebugResources-73:/values-ro/values-ro.xml",
             "map": [
                 {
                     "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\1e1d5befffa2a8da7a234143ea253451\\transformed\\material3-1.1.0\\res\\values-ro\\values-ro.xml",

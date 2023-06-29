@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.tinz.mydocmanager.app-mergeDebugResources-70:/values-sr/values-sr.xml",
+            "outputFile": "com.tinz.mydocmanager.app-mergeDebugResources-73:/values-sr/values-sr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\f66bc2b5f1277bee478f1acca6274307\\transformed\\ui-1.4.3\\res\\values-sr\\values-sr.xml",
